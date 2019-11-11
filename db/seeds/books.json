@@ -1,0 +1,62 @@
+[
+    {
+      "title": "Unlocking Android",
+      "author": "W. Frank Ableson",
+      "publisher": "Google",
+      "readOn": "2018-05-01"
+    },
+    {
+      "title": "Android in Action, Second Edition",
+      "author": "Robi Sen",
+      "publisher": "Amazon",
+      "readOn": "2018-05-15"
+    },
+    {
+      "title": "Specification by Example",
+      "author": "Gojko Adzic",
+      "publisher": "O'Reily",
+      "readOn": "2018-06-02"
+    },
+    {
+      "title": "Flex 3 in Action",
+      "author": "Tariq Ahmed with Jon Hirschi",
+      "publisher": "Mozilla",
+      "readOn": "2018-06-21"
+    },
+    {
+      "title": "Flex 4 in Action",
+      "author": "Tariq Ahmed",
+      "publisher": "Mozilla",
+      "readOn": "2018-06-24"
+    },
+    {
+      "title": "Collective Intelligence in Action",
+      "author": "Satnam Alag",
+      "publisher": "CIA",
+      "readOn": "2018-06-29"
+    },
+    {
+      "title": "Zend Framework in Action",
+      "author": "Rob Allen",
+      "publisher": "Kindle",
+      "readOn": "2018-09-15"
+    },
+    {
+      "title": "Flex on Java",
+      "author": "Bernerd Allmon",
+      "publisher": "Quora",
+      "readOn": "2018-10-21"
+    },
+    {
+      "title": "Griffon in Action",
+      "author": "Andres Almiray",
+      "publisher": "Oxford Publishing",
+      "readOn": "2018-12-10"
+    },
+    {
+      "title": "OSGi in Depth",
+      "author": "Alexandre de Castro Alves",
+      "publisher": "Microsoft",
+      "readOn": "2019-02-11"
+    }
+]
