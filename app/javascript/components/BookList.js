@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 class BookList extends React.Component {
   renderBooks() {
@@ -9,12 +10,14 @@ class BookList extends React.Component {
     );
 
     return books.map(book => (
-      <li key={book.id}>
-        {book.title}
-        {' - '}
-        {book.author}
-      </li>
-    ));
+        <li key={book.id}>
+          <Link to={`/books/${book.id}`}>
+            {book.readOn}
+            {' - '}
+            {book.title}
+          </Link>
+        </li>
+      ));
   }
 
   render() {
