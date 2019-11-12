@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 
 class BookList extends React.Component {
   renderBooks() {
-    const { books } = this.props;
+    const { activeId, books } = this.props;
     books.sort(
       (a, b) => new Date(b.readOn) - new Date(a.readOn),
     );
 
     return books.map(book => (
         <li key={book.id}>
-          <Link to={`/books/${book.id}`}>
+          <Link to={`/books/${book.id}`} className={activeId === book.id ? 'active' : ''}>
             {book.readOn}
             {' - '}
             {book.title}
@@ -22,7 +22,7 @@ class BookList extends React.Component {
 
   render() {
     return (
-      <section>
+      <section className="bookList">
         <h2>Books</h2>
         <ul>{this.renderBooks()}</ul>
       </section>

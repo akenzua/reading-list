@@ -5,6 +5,7 @@ import BookList from './BookList';
 import PropTypes from 'prop-types';
 import PropsRoute from './PropsRoute';
 import Book from './Book';
+import './App.css';
 
 class Main extends React.Component {
   constructor(props) {
@@ -36,8 +37,10 @@ class Main extends React.Component {
     return (
       <div>
         <Header />
-        <BookList books={books} />
-        <PropsRoute path="/books/:id" component={Book} book={book} />
+        <div className="grid">
+           <BookList books={books} activeId={Number(bookId)} />
+           <PropsRoute path="/books/:id" component={Book} book={book} />
+        </div>
       </div>
     );
   }
