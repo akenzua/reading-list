@@ -23,7 +23,10 @@ class BookList extends React.Component {
   render() {
     return (
       <section className="bookList">
-        <h2>Books</h2>
+        <h2>
+        Books
+        <Link to="/books/new">New Book</Link>
+        </h2>
         <ul>{this.renderBooks()}</ul>
       </section>
     );

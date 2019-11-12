@@ -6,6 +6,8 @@ import PropTypes from 'prop-types';
 import PropsRoute from './PropsRoute';
 import Book from './Book';
 import './App.css';
+import { Switch } from 'react-router-dom';
+import BookForm from './BookForm';
 
 class Main extends React.Component {
   constructor(props) {
@@ -39,7 +41,10 @@ class Main extends React.Component {
         <Header />
         <div className="grid">
            <BookList books={books} activeId={Number(bookId)} />
+           <Switch>
+           <PropsRoute path="/books/new" component={BookForm} />
            <PropsRoute path="/books/:id" component={Book} book={book} />
+           </Switch>
         </div>
       </div>
     );
